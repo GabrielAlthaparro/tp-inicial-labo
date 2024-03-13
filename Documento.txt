@@ -1,0 +1,15 @@
+Aplicación de la Inteligencia Artificial 
+La IA hoy en día es una de las tecnologías más innovadoras y utilizadas tanto en sistemas de software como en diferentes aparatos tecnológicos como los drones, robots y vehículos autónomos. Tan es así que la aplicación de la IA se encuentra en los lugares más cotidianos de nuestra vida como puede ser las publicidades que se manifiestan en diferentes páginas web a partir de que estas mismas están personalizadas por el estudio de nuestros comportamientos, los asistentes digitales integrados en nuestros celulares para poder ofrecer ayuda y dar accesibilidad al usuario que los usa, las traducciones automáticas para diferentes textos y archivos.
+Por otro lado, a nivel profesional la IA se puede utilizar para diferentes rubros tales como la medicina en donde esta ayuda realizar diagnósticos de los pacientes, predecir resultados de como el paciente va a reaccionar a diferentes medicamentos y ayudar a las personas con sus tratamientos medicinales a partir de diferentes métricas. También abarcan el rubro de la Ciberseguridad esto es para poder reconocer a partir de diferentes patrones si hay una amenaza de ciberataque o para proteger la integridad de los usuarios a partir de utilizar reconocimiento facial o dactilar en pos de evitar accesos indebidos. 
+No obstante, la IA también ayudo a nivel empresarial, ya que hoy en día podemos observar que gran parte de las ayudas para los usuarios de diferentes servicios son atendidas primera por un asistente virtual, programados con IA y utilizando la tecnología de ChatBox, que para poder solucionar sus problemas y en caso de no ser atendida la urgencia esta se pone en manos del personal de la empresa. Esto ayuda a nivel empresarial, ya que reducen la cantidad de urgencias que debe atender el personal.
+Estas revisiones de la aplicación de la IA nos llevaron a darnos cuenta de la importancia de la misma debido al alto grado de utilización que tiene tanto en nuestra vida cotidiana como en la profesional.   
+
+OnBording Digital
+
+Bibliografía:
+https://www.europarl.europa.eu/topics/es/article/20200827STO85804/que-es-la-inteligencia-artificial-y-como-se-usa
+https://immune.institute/blog/7-ejemplos-de-uso-de-inteligencia-artificial-en-nuestro-dia-a-dia/
+https://www.euroinnova.com.ar/blog/donde-se-aplica-la-inteligencia-artificial#3-aplicaciones-de-la-inteligencia-artificial-en-la-vida-cotidiana
+https://blogs.iadb.org/trabajo/es/inteligencia-artificial-que-aporta-y-que-cambia-en-el-mundo-del-trabajo/#:~:text=%C2%BFC%C3%B3mo%20se%20implementa%20la%20inteligencia,de%20los%20flujos%20de%20trabajo.
+https://debmedia.com/blog/asistentes-virtuales
+
