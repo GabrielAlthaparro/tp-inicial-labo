@@ -5,6 +5,10 @@ No obstante, la IA también ayudo a nivel empresarial, ya que hoy en día podemo
 Estas revisiones de la aplicación de la IA nos llevaron a darnos cuenta de la importancia de la misma debido al alto grado de utilización que tiene tanto en nuestra vida cotidiana como en la profesional.   
 
 OnBording Digital
+El OnBording digital refiere al proceso donde se va a iniciar una relación con el cliente de manera digital para que estas hagan uso del producto de software. Para poder realizar esta relación es necesario que poder validar la identidad del cliente de manera segura y simple para poder garantizar la autenticidad y seguridad de los usuarios a partir de diferentes pruebas.
+
+Gracias a la IA el proceso de OnBording va a ser posible que estas pruebas se automaticen y se verifiquen lo más rápido posible. Esto es a partir 
+
 
 Bibliografía:
 https://www.europarl.europa.eu/topics/es/article/20200827STO85804/que-es-la-inteligencia-artificial-y-como-se-usa
