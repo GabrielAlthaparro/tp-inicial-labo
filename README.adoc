@@ -1,0 +1,126 @@
+= Laboratorio de construcción de software/Proyecto Profesional 1: Trabajo Practico Inicial
+Gabriel Althaparro<gabriel.altha@gmail.com>; Federico Gonzalez <federico.l.g8195@gmail.com>; Esteban Ezequiel Lucero <este.lucero2212@gmail.com>
+v1, {2024-03-14}. Docentes Juan Carlos Monteros y ... (COM-01)
+:title-page:
+:numbered:
+:source-highlighter: coderay
+:tabsize: 4
+Contenidos::
+1. Introducción
+2. Aplicación De La Inteligencia Artificial 
+3. OnBording Digital
+4. Normativas
+5. Objetivos del ChatBot
+6. Herramientas 
+
+
+== Introducción
+El presente trabajo tiene como objetivo presentar una propuesta para el desarrollo de una aplicación destinada a facilitar la reserva de canchas de fútbol, integrando un chatbot para la atención al cliente y un sistema de autenticación biométrica basado en huella dactilar para garantizar la seguridad y privacidad de los usuarios.
+
+La creación de esta aplicación surge como respuesta a la necesidad de optimizar y agilizar el proceso de reserva de canchas deportivas, ofreciendo a los usuarios una experiencia intuitiva y segura. La combinación de un chatbot inteligente con la autenticación biométrica promete proporcionar una solución innovadora que mejore la accesibilidad y la protección de los datos personales de los usuarios.
+
+== Aplicación De La Inteligencia Artificial
+
+
+La IA hoy en día es una de las tecnologías más innovadoras y utilizadas tanto en sistemas de software como en diferentes aparatos tecnológicos como los drones, robots y vehículos autónomos. Tan es así que la aplicación de la IA se encuentra en los lugares más cotidianos de nuestra vida como puede ser las publicidades que se manifiestan en diferentes páginas web a partir de que estas mismas están personalizadas por el estudio de nuestros comportamientos, los asistentes digitales integrados en nuestros celulares para poder ofrecer ayuda y dar accesibilidad al usuario que los usa, las traducciones automáticas para diferentes textos y archivos.
+
+Por otro lado, a nivel profesional la IA se puede utilizar para diferentes rubros tales como la medicina en donde esta ayuda realizar diagnósticos de los pacientes, predecir resultados de como el paciente va a reaccionar a diferentes medicamentos y ayudar a las personas con sus tratamientos medicinales a partir de diferentes métricas. También abarcan el rubro de la Ciberseguridad esto es para poder reconocer a partir de diferentes patrones si hay una amenaza de ciberataque o para proteger la integridad de los usuarios a partir de utilizar reconocimiento facial o dactilar en pos de evitar accesos indebidos. 
+
+No obstante, la IA también ayudo a nivel empresarial, ya que hoy en día podemos observar que gran parte de las ayudas para los usuarios de diferentes servicios son atendidas primera por un asistente virtual, programados con IA y utilizando la tecnología de ChatBot, que para poder solucionar sus problemas y en caso de no ser atendida la urgencia esta se pone en manos del personal de la empresa. Esto ayuda a nivel empresarial, ya que reducen la cantidad de urgencias que debe atender el personal.
+
+Estas revisiones de la aplicación de la IA nos llevaron a darnos cuenta de la importancia de la misma debido al alto grado de utilización que tiene tanto en nuestra vida cotidiana como en la profesional. Y gracias a esto poder tener una mejor decisión a la hora de tomar tecnologías para el objetivo de este trabajo practico.  
+
+== OnBording Digital
+
+El OnBording digital refiere al proceso donde se va a iniciar una relación con el cliente de manera digital para que estas hagan uso del producto de software. Para poder realizar esta relación es necesario de poder validar la identidad del cliente de manera segura y simple para poder garantizar la autenticidad y seguridad de los usuarios a partir de diferentes pruebas.
+
+Gracias a la IA el proceso de OnBording va a ser posible que estas pruebas se automaticen y se verifiquen, lo más rápido posible, a partir de que se realicen ciertos pasos en el procedimiento de inscripción. Cuyo primer paso es verificar el documento de identidad del cliente a partir de escanear el mismo en ambas caras a partir de utilizar tecnologías OCR junto con la IA y el Machine Learning. Luego de verificar el documento se sigue por examinar los datos biométricos del cliente partiendo en que el cliente se saque una foto de frente, en donde se muestre correctamente sus rasgos faciales, y escanee sus huellas dactilares para así comprobar si el documento de identidad, las bases de datos con información del individuo y su persona tienen correlación. Cabe recalcar que estos pasos tienen medidas de antifraude para que no se cometan errores en la examinación.
+
+También para verificar la autenticidad del cliente lo que se realiza es una consulta a listas de Anti Money Laundering (AML) para rastrear que el cliente no esté incumbido en actividades fraudulentas como lo pueden ser fraude de identidad, lavado de activos, financiar organizaciones terroristas, poseer sanciones económicas.
+
+== Normativas
+
+Al día de hoy en Argentina no hay leyes que incumban incluyan a las inteligencias artificiales, pero ante el crecimiento exponencial de estas tecnologías la ONU describió 6 puntos de recomendación que importan en términos éticos. Estos puntos son: 
+
+* Proporcionalidad e inocuidad. En caso de que pueda producirse cualquier daño para los seres humanos, debe garantizarse la aplicación de procedimientos de evaluación de riesgos y la adopción de medidas para impedir que ese daño se produzca.
+
+* Seguridad y protección. Los daños no deseados (riesgos de seguridad) y las vulnerabilidades a los ataques (riesgos de protección) deben ser evitados y deben tenerse en cuenta, prevenirse y eliminarse durante el ciclo de vida de los sistemas de IA para garantizar la seguridad y la protección de los seres humanos, del medio ambiente y de los ecosistemas.
+
+* Equidad y no discriminación. Los actores de la Inteligencia artificial deben promover la diversidad y la inclusión, garantizar la justicia social, proteger la equidad y luchar contra todo tipo de discriminación, de conformidad con el derecho internacional. Los actores de la IA deberían hacer todo lo razonablemente posible por reducir al mínimo y evitar reforzar o perpetuar aplicaciones y resultados discriminatorios o sesgados a lo largo del ciclo de vida de los sistemas de IA, a fin de garantizar la equidad de dichos sistemas.
+
+* Supervisión y decisión humanas. La decisión de ceder el control a los sistemas de IA en contextos limitados sigue siendo de los seres humanos, porque un sistema de IA no puede reemplazar la responsabilidad final de los seres humanos y su obligación de rendir cuentas.
+
+* Transparencia y explicabilidad. La transparencia y la explicabilidad de los sistemas de IA son condiciones previas fundamentales para garantizar el respeto, la protección y la promoción de los derechos humanos, las libertades fundamentales y los principios éticos. Las personas deben tener la oportunidad de pedir explicaciones e información al responsable de la IA o a las instituciones del sector público correspondientes.
+
+* Sensibilización y educación. La sensibilización y la comprensión del público sobre las tecnologías de IA y el valor de los datos deben promoverse mediante una educación abierta y accesible, la participación cívica, las competencias digitales y la capacitación en materia de ética del uso de la IA. También debe realizarse la alfabetización mediática e informacional y la capacitación dirigida conjuntamente por los gobiernos, las organizaciones intergubernamentales, la sociedad civil, las universidades, los medios de comunicación, los dirigentes comunitarios y el sector privado, para garantizar una participación pública efectiva.
+
+Por otro lado, la Unión Europea (UE) sí consta de regulaciones hacia la inteligencia artificial en donde garantiza que los sistemas con IA sean seguros, transparentes, trazables, no discriminatorios, respetuosos con el medio ambiente y que se regulen de manera manual por personas. Igualmente, la UE presenta dos tipos de riesgos en la IA y depende de este se determina cómo se actúa sobre la misma. El primero de ellos es el riesgo inaceptable que abarcan los sistemas que son una amenaza para la humanidad y serán prohibidos e incluyen:
+
+* Manipulación cognitiva del comportamiento de personas o grupos vulnerables. 
+
+* Específicos puntuación social: clasificación de personas en función de su comportamiento, estatus socioeconómico o características personales.
+
+* Sistemas de identificación biométrica en tiempo real y a distancia, como el reconocimiento facial.
+
+Este último se puede utilizar, pero en casos de perseguir delitos o si se tiene una aprobación judicial para el uso.
+Para seguir tenemos los de alto riesgos que incluyen sistemas que afecten de manera negativa a la seguridad o a los derechos humanos y que serán evaluadas antes de su lanzamiento y a lo largo de su ciclo de vida, al igual que tendrán que atender reclamos de la ciudadanía.
+Los sistemas con IA de alto riesgo se dividen en dos los cuales son:
+
+1. Los sistemas de IA que se utilicen en productos sujetos a la legislación de la UE sobre seguridad de los productos. Esto incluye juguetes, aviación, automóviles, dispositivos médicos y ascensores.
+
+2. Los sistemas de IA pertenecientes a ocho ámbitos específicos que deberán registrarse en una base de datos de la UE:
+
+•	Identificación biométrica y categorización de personas físicas
+•	Gestión y explotación de infraestructuras críticas
+•	Educación y formación profesional
+•	Empleo, gestión de trabajadores y acceso al autoempleo
+•	Acceso y disfrute de servicios privados esenciales y servicios y prestaciones públicas
+•	Aplicación de la ley
+•	Gestión de la migración, el asilo y el control de fronteras
+•	Asistencia en la interpretación jurídica y aplicación de la ley.
+
+También los sistemas con IA tendrán que presentar transparencia y cumplir con la legislación de la UE en materia de derechos de autor.
+
+== Objetivos del ChatBot
+
+El objetivo del proyecto es desarrollar un ChatBot avanzado para un complejo deportivo especializado en fútbol. Este asistente virtual estará diseñado para gestionar eficientemente las consultas de los usuarios, proporcionando información precisa sobre la ubicación del complejo, sus horarios de apertura y cierre, así como el nombre del mismo. Además, el ChatBot facilitará la verificación de disponibilidad de las canchas en fechas específicas, permitiendo a los usuarios realizar reservas, especificando la fecha, hora específica, cancha seleccionada y la duración del alquiler deseado, y se le retornará al usuario un número de reserva. Asimismo, el usuario podrá cancelarlas con el número de reserva.
+
+== Herramientas
+
+== Bibliografía
+
+https://www.europarl.europa.eu/topics/es/article/20200827STO85804/que-es-la-inteligencia-artificial-y-como-se-usa
+
+https://immune.institute/blog/7-ejemplos-de-uso-de-inteligencia-artificial-en-nuestro-dia-a-dia/
+
+https://www.euroinnova.com.ar/blog/donde-se-aplica-la-inteligencia-artificial#3-aplicaciones-de-la-inteligencia-artificial-en-la-vida-cotidiana
+
+https://blogs.iadb.org/trabajo/es/inteligencia-artificial-que-aporta-y-que-cambia-en-el-mundo-del-trabajo/#:~:text=%C2%BFC%C3%B3mo%20se%20implementa%20la%20inteligencia,de%20los%20flujos%20de%20trabajo.
+
+https://debmedia.com/blog/asistentes-virtuales
+
+https://www.mobbeel.com/blog/que-es-el-onboarding-digital/#:~:text=El%20digital%20onboarding%20se%20refiere,la%20inteligencia%20artificial%20(IA).
+
+https://www.signicat.com/es/blog/digital-onboarding-que-es-como-funciona
+
+https://www.klippa.com/en/blog/information/digital-onboarding/#:~:text=AI%20image%20recognition%20and%20computer,the%20photo%20ID%20documents%20submitted.
+
+https://alicebiometrics.com/que-es-la-tecnologia-nfc/#:~:text=Reconocimiento%20%C3%B3ptico%20de%20caracteres%20(OCR),(te%20contamos%20m%C3%A1s%20aqu%C3%AD).
+
+https://alicebiometrics.com/la-tecnologia-ocr-en-la-verificacion-de-identidad/
+
+https://alicebiometrics.com/para-que-sirve-el-reconocimiento-facial/
+
+https://www.mobbeel.com/blog/la-magia-de-la-biometria/
+
+https://www.mobbeel.com/blog/que-es-ocr-y-como-optimiza-la-validacion-identidad/
+
+https://www.europarl.europa.eu/topics/es/article/20230601STO93804/ley-de-ia-de-la-ue-primera-normativa-sobre-inteligencia-artificial
+
+https://www.argentina.gob.ar/justicia/derechofacil/leysimple/educacion-ciencia-cultura/recomendaciones-para-el-uso-de
+
+https://www.pagina12.com.ar/720646-europa-ratifica-su-ley-para-regular-la-inteligencia-artifici
+
+
+
+
