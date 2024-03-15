@@ -1,10 +1,19 @@
 = Laboratorio de construcción de software/Proyecto Profesional 1: Trabajo Practico Inicial
-Gabriel Althaparro<gabriel.altha@gmail.com>; Federico Gonzalez <federico.l.g8195@gmail.com>; Esteban Ezequiel Lucero <este.lucero2212@gmail.com>
-v1, {2024-03-14}. Docentes Juan Carlos Monteros y ... (COM-01)
+
 :title-page:
 :numbered:
 :source-highlighter: coderay
 :tabsize: 4
+Universidad Nacional de General Sarmiento
+
+Docentes: Juan Carlos Monteros y ... 
+
+Alumnos: Gabriel Althaparro <gabriel.altha@gmail.com>; Federico Gonzalez <federico.l.g8195@gmail.com>; Esteban Ezequiel Lucero <este.lucero2212@gmail.com>; 
+
+Comisión 1
+
+
+
 Contenidos::
 1. Introducción
 2. Aplicación De La Inteligencia Artificial 
