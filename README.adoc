@@ -95,6 +95,13 @@ También los sistemas con IA tendrán que presentar transparencia y cumplir con 
 El objetivo del proyecto es desarrollar un ChatBot avanzado para un complejo deportivo especializado en fútbol. Este asistente virtual estará diseñado para gestionar eficientemente las consultas de los usuarios, proporcionando información precisa sobre la ubicación del complejo, sus horarios de apertura y cierre, así como el nombre del mismo. Además, el ChatBot facilitará la verificación de disponibilidad de las canchas en fechas específicas, permitiendo a los usuarios realizar reservas, especificando la fecha, hora específica, cancha seleccionada y la duración del alquiler deseado, y se le retornará al usuario un número de reserva. Asimismo, el usuario podrá cancelarlas con el número de reserva.
 
 == Herramientas
+A partir de diversas investigaciones pudimos observar que había diferentes opciones a tratar para generar una aplicación móvil con Python, en donde las 3 opciones que encontramos fueron:
+
+* Usar la librería Kivy que utiliza Python.
+* Usar Python y Flutter para poder moldear la aplicación de escritorio a móvil.
+* Usar Kotlin junto con la librería PyTorch. 
+
+Antes estas tres opciones, decidimos poder utilizar Kivy para poder realizar la aplicación móvil y solo utilizar un lenguaje de programación. Además, para probar dicha aplicación optamos por utilizar un celular con sistema Android para correr la APK en el dispositivo. 
 
 == Bibliografía
 
