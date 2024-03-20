@@ -13,5 +13,5 @@ class Canchas(MDApp):
         ##screen_manager.add_widget(Builder.load_file("chatBot.kv"))
         return screen_manager
 
-
+LabelBase.register(name="BMont",fn_regular="assets\\static\\Montserrat-Bold.ttf")
 Canchas().run()

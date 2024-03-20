@@ -1,11 +1,22 @@
 MDScreen:
     name:"loginTouch"
     MDFloatLayout:
+
         md_bg_color: 249/255,196/255,66/255, 1
+        
+
+
         Image:
             source: "assets/fingerprint.png"
             pos_hint:{'center_x': 0.5, 'center_y': 0.20}
-            size_hint:0.5,0.5
+            size_hint:0.4,0.4
 
-        MDLabel:
+        Label:
             text:"Ingrese Con Su Huella Dactilar"
+            haling:"center"
+            theme_text_color: "Custom"
+            text_color: 1,1,1,1
+            font_size:"20sp"
+            role:"small"
+            pos_hint: {"center_x": .50, "center_y": .4}
+            font_name:"BMont"
