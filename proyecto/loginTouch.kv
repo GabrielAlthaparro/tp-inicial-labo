@@ -11,8 +11,8 @@ MDScreen:
             Color:
                 rgba:(221/255,218/255,213/255, 1)
             RoundedRectangle:
-                size:350,200
-                pos:0,400
+                size:self.width,self.height/3
+                pos:0,self.height-150
                 radius:[10,10,10,10]
 
 
@@ -32,15 +32,15 @@ MDScreen:
             text_color: 1,1,1,1
             font_size:"20sp"
             role:"small"
-            pos_hint: {"center_x": .50, "center_y": .4}
+            pos_hint: {"center_x": .50, "center_y": .45}
             font_name:"BMont"
 
-        AsyncImage:
+        Image:
             source: "assets/logo.png"
 
-            size_hint:0.4,0.4
-            pos_hint:{'center_x': 0.5, 'center_y': 0.9}
 
+            pos_hint:{'center_x': 0.5, 'center_y': 0.9}
+            size_hint:0.8,0.8
 
 
 
