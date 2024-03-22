@@ -1,0 +1,31 @@
+{"intents":
+    [
+          {
+            "tag": "saludo",
+            "patterns": ["hola","buenos dias","saludos","como estas?"],
+            "responses":["Buenos dias¿Como estas?","Bienvenido a SAC-Fubtol ChatBot","Hola ¿Como estas?"]
+
+          },
+          {
+            "tag": "ubicacion",
+            "patterns": ["donde queda?","como llego?","en que ciudad queda?","cual es la direccion?"],
+            "responses":[" La direccion de la cancha es: Av. León Gallardo 70, Muñiz, Provincia de Buenos Aires"]
+
+          },
+          {
+            "tag": "horarios_apertura_cierre",
+            "patterns": ["que horarios tiene de atencion?","a que hora cierra?","a que hora abre?","cuales son los horarios de apertura?","hasta que hora estan abiertos"],
+            "responses":["Estamos atendiendo de 10:30 a 23 todos los dias"]
+
+          },
+          {
+            "tag": "horarios_canchas",
+            "patterns": ["que horarios disponible tiene?","canchas disponibles","que canchas tenes","tenes cancha para las"],
+            "responses":["los horarios de cancha que tenemos son: "]
+
+          }
+
+    ]
+
+
+}
