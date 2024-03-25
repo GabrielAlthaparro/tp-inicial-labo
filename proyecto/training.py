@@ -70,7 +70,7 @@ training = np.array(training)
 trainX = training[:, :len(words)]
 #Se obtiene una matriz bidimensional con los valores de training pero solo de las clases
 trainY = training[:, len(words):]
- #Configuracion del modelo de red neuronales
+#Configuracion del modelo de red neuronales
 model = tf.keras.Sequential()
 model.add(tf.keras.layers.Dense(128, input_shape=(len(trainX[0]),), activation = 'relu'))
 model.add(tf.keras.layers.Dropout(0.5))
@@ -82,6 +82,6 @@ sgd = tf.keras.optimizers.SGD(learning_rate=0.01, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 #Entrenamos modelo
 hist =model.fit(trainX, trainY, epochs=200, batch_size=5, verbose=1)
-#Guardamos el mdoelo
+#Guardamos el modelo
 model.save('chatbot_model.h5',hist)
 print('Done')
