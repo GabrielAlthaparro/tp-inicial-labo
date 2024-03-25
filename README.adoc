@@ -16,11 +16,9 @@ Comisión 1
 
 Contenidos::
 1. Introducción
-2. Aplicación De La Inteligencia Artificial 
-3. OnBording Digital
-4. Normativas
-5. Objetivos del ChatBot
-6. Herramientas 
+2. Documento de Investigacion
+3. Documentación Técnica y Funcional del Chatbot
+ 
 
 
 == Introducción
@@ -28,7 +26,9 @@ El presente trabajo tiene como objetivo presentar una propuesta para el desarrol
 
 La creación de esta aplicación surge como respuesta a la necesidad de optimizar y agilizar el proceso de reserva de canchas deportivas, ofreciendo a los usuarios una experiencia intuitiva y segura. La combinación de un chatbot inteligente con la autenticación biométrica promete proporcionar una solución innovadora que mejore la accesibilidad y la protección de los datos personales de los usuarios.
 
-== Aplicación De La Inteligencia Artificial
+== Documento de Investigacion
+
+=== Aplicación De La Inteligencia Artificial
 
 
 La IA hoy en día es una de las tecnologías más innovadoras y utilizadas tanto en sistemas de software como en diferentes aparatos tecnológicos como los drones, robots y vehículos autónomos. Tan es así que la aplicación de la IA se encuentra en los lugares más cotidianos de nuestra vida como puede ser las publicidades que se manifiestan en diferentes páginas web a partir de que estas mismas están personalizadas por el estudio de nuestros comportamientos, los asistentes digitales integrados en nuestros celulares para poder ofrecer ayuda y dar accesibilidad al usuario que los usa, las traducciones automáticas para diferentes textos y archivos.
@@ -39,7 +39,7 @@ No obstante, la IA también ayudo a nivel empresarial, ya que hoy en día podemo
 
 Estas revisiones de la aplicación de la IA nos llevaron a darnos cuenta de la importancia de la misma debido al alto grado de utilización que tiene tanto en nuestra vida cotidiana como en la profesional. Y gracias a esto poder tener una mejor decisión a la hora de tomar tecnologías para el objetivo de este trabajo practico.  
 
-== OnBording Digital
+=== OnBording Digital
 
 El OnBording digital refiere al proceso donde se va a iniciar una relación con el cliente de manera digital para que estas hagan uso del producto de software. Para poder realizar esta relación es necesario de poder validar la identidad del cliente de manera segura y simple para poder garantizar la autenticidad y seguridad de los usuarios a partir de diferentes pruebas.
 
@@ -47,7 +47,7 @@ Gracias a la IA el proceso de OnBording va a ser posible que estas pruebas se au
 
 También para verificar la autenticidad del cliente lo que se realiza es una consulta a listas de Anti Money Laundering (AML) para rastrear que el cliente no esté incumbido en actividades fraudulentas como lo pueden ser fraude de identidad, lavado de activos, financiar organizaciones terroristas, poseer sanciones económicas.
 
-== Normativas
+=== Normativas
 
 Al día de hoy en Argentina no hay leyes que incumban incluyan a las inteligencias artificiales, pero ante el crecimiento exponencial de estas tecnologías la ONU describió 6 puntos de recomendación que importan en términos éticos. Estos puntos son: 
 
@@ -90,18 +90,65 @@ Los sistemas con IA de alto riesgo se dividen en dos los cuales son:
 
 También los sistemas con IA tendrán que presentar transparencia y cumplir con la legislación de la UE en materia de derechos de autor.
 
-== Objetivos del ChatBot
+=== Objetivos del ChatBot
 
 El objetivo del proyecto es desarrollar un ChatBot avanzado para un complejo deportivo especializado en fútbol. Este asistente virtual estará diseñado para gestionar eficientemente las consultas de los usuarios, proporcionando información precisa sobre la ubicación del complejo, sus horarios de apertura y cierre, así como el nombre del mismo. Además, el ChatBot facilitará la verificación de disponibilidad de las canchas en fechas específicas, permitiendo a los usuarios realizar reservas, especificando la fecha, hora específica, cancha seleccionada y la duración del alquiler deseado, y se le retornará al usuario un número de reserva. Asimismo, el usuario podrá cancelarlas con el número de reserva.
 
-== Herramientas
+=== Herramientas
 A partir de diversas investigaciones pudimos observar que había diferentes opciones a tratar para generar una aplicación móvil con Python, en donde las 3 opciones que encontramos fueron:
 
 * Usar la librería Kivy que utiliza Python.
 * Usar Python y Flutter para poder moldear la aplicación de escritorio a móvil.
 * Usar Kotlin junto con la librería PyTorch. 
 
-Antes estas tres opciones, decidimos poder utilizar Kivy para poder realizar la aplicación móvil y solo utilizar un lenguaje de programación. Además, para probar dicha aplicación optamos por utilizar un celular con sistema Android para correr la APK en el dispositivo. 
+Antes estas tres opciones, decidimos poder utilizar Kivy para poder realizar la aplicación móvil y solo utilizar un lenguaje de programación. Además, para probar dicha aplicación optamos por utilizar un celular con sistema Android para correr la APK en el dispositivo.
+
+== Documentación Técnica y Funcional del Chatbot
+
+=== Descripción General
+En esta entrega presentaremos el ChatBot en una aplicación para reservas de cancha que utilizará inteligencia artificial (IA) para interactuar con usuarios mediante un chat de texto que resolverá las dudas del mismo. Esta IA utiliza una red neuronal artificial para comprender y responder a las consultas de los usuarios de manera automatizada y con un entrenamiento supervisado para su mejor funcionamiento.
+
+=== Funcionalidad
+En este apartado definiremos las principales funcionalidades que debe presentar la aplicación siendo la misma la primera entrega y dando mayor profundidad a lo que debe realizar el ChatBot lo cual es:
+- Como usuario debemos poder preguntar la hora de apertura y cierre de las canchas de diferentes maneras al ChatBot para que nos dé la respuesta adecuada.
+- Como usuario debemos poder preguntar el precio de la cancha de diferentes maneras al ChatBot para que nos dé la respuesta adecuada.
+- Como usuario debemos poder preguntar los horarios de las canchas disponibles de diferentes maneras al ChatBot para que nos dé la respuesta adecuada.
+- Como usuario debemos poder preguntar la ubicación del centro deportivo de diferentes maneras al ChatBot para que nos dé la respuesta adecuada.
+- Como usuario debemos podremos tener una charla fluida con el ChatBot.
+- Como usuario debemos poder preguntar otras formas de comunicación de diferentes maneras al ChatBot para que les dé el número de atención al cliente.
+- Como usuario debemos poder reservar o cancelar alguna cancha de diferentes maneras al ChatBot para que les dé el número de atención al cliente.
+Las Funcionalidades básicas de este ChatBot cubren las necesidades del usuario para que pueda tener información básica del centro de canchas de manera rápida y sencilla sin tener que esperar a la respuesta del personal.
+
+=== Arquitectura
+El ChatBot se basa en una arquitectura en donde el cliente a través de la interfaz de usuario enviará mensajes y el ChatBot responderá a partir de su entrenamiento, con un banco de datos propio, cuál es la mejor respuesta. La arquitectura incluye los siguientes componentes principales:
+* Interfaz de Usuario: Interfaz a través de la cual los usuarios envían mensajes al chatbot.
+* Procesamiento de Texto: Preprocesamiento de texto para convertir los mensajes de los usuarios en datos que la red neuronal pueda procesar.
+* Red Neuronal: Modelo de red neuronal artificial que clasifica los mensajes de los usuarios en categorías y genera respuestas adecuadas.
+* Integración con Datos: Integración con archivos de datos que contienen patrones de mensajes y respuestas asociadas para entrenar el modelo de red neuronal.
+
+=== Tecnologías Utilizadas
+El ChatBot está desarrollado utilizando las siguientes tecnologías principales:
+* Python: Lenguaje de programación utilizado para escribir el código del ChatBot.
+* Keras: Biblioteca de aprendizaje profundo utilizada para construir y entrenar el modelo de red neuronal.
+* NLTK (Natural Language Toolkit): Biblioteca de procesamiento de lenguaje natural utilizada para tokenizar y lematizar palabras en los mensajes de los usuarios.
+* JSON: Formato utilizado para almacenar los datos de entrenamiento del chatbot.
+* Terminal: en esta entrega esta va a ser nuestra interfaz de usuario por el cual se va a poder interactuar con el ChatBot.
+
+=== ¿Qué es NLTK, Tokenizar y Lematizar?
+NLTK es una librería de Python que se utiliza para el procesamiento de lenguaje natural y que nos brinda herramientas para tokenizar y lematizar palabras que nos sirven como datos de entrenamiento para la red neuronal que va a utilizar el ChatBot. Ya visto lo que es NLTK nos consta de ver el significado de tokenizar que refiere a la acción de separar una frase en unidades más pequeñas tales pueden ser palabras, sub palabras o caracteres para poder hacer un correcto análisis léxico. Por último, después de tokenizar tendremos que lematizar que refiere al proceso lingüístico y de procesamiento de lenguaje natural que consiste en reducir las palabras a su forma base o raíz como puede ser el infinitivo de un verbo, el singular de un sustantivo y el singular masculino para los adjetivos.
+
+=== Entrenamiento del Modelo
+El modelo de red neuronal del ChatBot se entrena utilizando un conjunto de datos que contiene patrones de mensajes de usuarios y las respuestas asociadas. El proceso de entrenamiento implica los siguientes pasos:
+* Tokenización y lematización de palabras en los mensajes de los usuarios.
+* Generación de una representación de bolsa de palabras para cada mensaje.
+* Entrenamiento de la red neuronal utilizando un modelo secuencial y un optimizador descenso de gradiente estocástico (SGD).
+* Guardado del modelo entrenado para su posterior uso en la generación de respuestas.
+
+=== Implementación
+El ChatBot se implementa como una aplicación de consola en Python. La implementación incluye los siguientes archivos principales:
+* train_chatbot.py: Script utilizado para entrenar el modelo de red neuronal utilizando los datos de entrenamiento. En donde las primeras líneas de código se utiliza la librería NLTK para poder procesar los datos y así poder generar un modelo de IA que esté bien entrenada.
+* chatbot.py: Script principal que contiene la lógica del ChatBot, incluyendo la clasificación de mensajes de usuarios y la generación de respuestas.
+* intents.json: Archivo JSON que contiene los patrones de mensajes y respuestas asociadas utilizadas para entrenar el modelo.
 
 == Bibliografía
 
@@ -137,6 +184,8 @@ https://www.argentina.gob.ar/justicia/derechofacil/leysimple/educacion-ciencia-c
 
 https://www.pagina12.com.ar/720646-europa-ratifica-su-ley-para-regular-la-inteligencia-artifici
 
+https://www.adictosaltrabajo.com/2023/07/27/nltk-python/
 
+https://es.wikipedia.org/wiki/Lematizaci%C3%B3n
 
 
