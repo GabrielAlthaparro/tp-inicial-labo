@@ -1,0 +1,80 @@
+{
+  "intents": [
+    {
+      "tag": "saludo",
+      "patterns": ["hola", "que tal", "como estas", "saludos"],
+      "responses": ["Hola!", "Buenos dias!", "¿Como estas?"]
+    },
+    {
+      "tag": "nombre",
+      "patterns": ["como es tu nombre", "como te llamas"],
+      "responses": ["Me llamo Juan Pablo", "Mi nombre es Juan Pablo"]
+    },
+    {
+      "tag": "despedida",
+      "patterns": ["adios", "hasta luego", "nos vemos"],
+      "responses": ["Adios!", "Hasta luego!", "Nos vemos pronto!"]
+    },
+    {
+      "tag": "agradecimiento",
+      "patterns": ["gracias", "muchas gracias", "te agradezco"],
+      "responses": ["De nada!", "No hay de que.", "Es un placer ayudarte."]
+    },
+    {
+      "tag": "consulta_tiempo",
+      "patterns": ["que tiempo hace", "cual es el pronostico del clima", "me puedes decir la temperatura actual"],
+      "responses": ["El tiempo está {clima}. La temperatura es {temperatura}°C."]
+    },
+    {
+      "tag": "broma",
+      "patterns": ["cuéntame una broma", "hazme reír"],
+      "responses": ["¿Por qué los pájaros no usan Facebook? Porque ya tienen Twitter.", "¿Qué le dice un jardinero a otro jardinero? ¡Nos vemos el lunes!"]
+    },
+    {
+      "tag": "consulta_ubicacion",
+      "patterns": ["donde estoy", "cuál es mi ubicación"],
+      "responses": ["Estás en algún lugar del mundo.", "Tu ubicación es donde estés."]
+    },
+    {
+      "tag": "informacion_personal",
+      "patterns": ["cuál es tu edad", "de dónde eres", "cómo te hicieron"],
+      "responses": ["Soy un programa de inteligencia artificial, así que no tengo edad ni lugar de origen.", "Fui creado por un equipo de desarrolladores."]
+    },
+    {
+      "tag": "despedida_personalizada",
+      "patterns": ["nos vemos después", "hasta pronto amigo", "adiós compañero"],
+      "responses": ["Hasta luego!", "Que tengas un buen día.", "Adiós amigo, hasta la próxima!"]
+    },
+    {
+      "tag": "consulta_noticias",
+      "patterns": ["qué noticias hay", "dime alguna noticia"],
+      "responses": ["Puedes encontrar las últimas noticias en los principales sitios web de noticias."]
+    },
+    {
+      "tag": "consulta_horario",
+      "patterns": ["qué hora es", "me puedes decir la hora"],
+      "responses": ["La hora actual es {hora}."]
+    },
+    {
+      "tag": "consulta_definicion",
+      "patterns": ["qué significa {palabra}", "definición de {palabra}"],
+      "responses": ["{definicion}"]
+    },
+    {
+      "tag": "consulta_precios",
+      "patterns": ["cuánto cuesta {producto}", "precio de {producto}"],
+      "responses": ["El precio de {producto} es {precio}."]
+    },
+    {
+      "tag": "consulta_habilidades",
+      "patterns": ["qué puedes hacer", "cuáles son tus habilidades"],
+      "responses": ["Puedo responder preguntas, contar chistes, dar información sobre el clima, entre otras cosas."]
+    },
+    {
+      "tag": "disponible",
+      "patterns": ["tenes cancha", "que horarios tenes","Tienen alguna cancha disponible para jugar hoy","Podría reservar una cancha para esta tarde","Puedo saber si hay alguna cancha libre para alquilar ahora mismo"],
+      "responses": ["tengo los siguientes horarios: lunes 20:00-21:00 , martes 17:00-18:00 , martes 21:00-22:00 "]
+    }
+
+  ]
+}
