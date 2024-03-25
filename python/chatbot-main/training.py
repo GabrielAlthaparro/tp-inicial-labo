@@ -13,7 +13,7 @@ from keras.optimizers import SGD
 
 lemmatizer = WordNetLemmatizer()
 
-intents = json.loads(open(R'C:\Users\fede\Desktop\python\chatbot-main\intents.json').read())
+intents = json.loads(open('intents.json').read())
 
 nltk.download('punkt')
 nltk.download('wordnet')
