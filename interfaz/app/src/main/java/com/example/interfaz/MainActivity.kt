@@ -66,6 +66,9 @@ class MainActivity : AppCompatActivity() {
             .setNegativeButtonText("Use account password")
 
             .build()
-        biometricPrompt.authenticate(promptInfo)
+        binding.imageView2.setOnClickListener(){
+            biometricPrompt.authenticate(promptInfo)
+        }
+
     }
 }
