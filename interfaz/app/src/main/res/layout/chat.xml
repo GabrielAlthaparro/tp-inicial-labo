@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight=".5"
-            android:background="@drawable/button"
+            android:background="@drawable/boton"
             android:backgroundTint="#D5DADC"
             android:hint="Type a message..."
             android:inputType="textShortMessage"
@@ -30,13 +30,11 @@
 
         <Button
             android:id="@+id/btn_send"
-            android:height="48dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            android:background="@drawable/button"
-            android:backgroundTint="#5ACFD3"
+            android:background="@drawable/boton"
             android:text="Send"
             android:textColor="@android:color/white" />
 
