@@ -48,6 +48,8 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(applicationContext,
                         "Authentication succeeded!", Toast.LENGTH_SHORT)
                         .show()
+                    setContentView(R.layout.chat)
+
                 }
 
                 override fun onAuthenticationFailed() {
@@ -55,6 +57,7 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(applicationContext, "Authentication failed",
                         Toast.LENGTH_SHORT)
                         .show()
+
                 }
             })
         promptInfo = BiometricPrompt.PromptInfo.Builder()

@@ -49,5 +49,11 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("androidx.biometric:biometric:1.2.0-alpha05")
+    //RecyclerView
+    implementation ("androidx.recyclerview:recyclerview:1.1.0")
+
+    //Coroutines
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
 
 }

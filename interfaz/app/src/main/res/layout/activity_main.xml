@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="440dp"
         android:text="Ingrese Su Huella Dactilar"
-        android:textColor="@color/white"
+        android:textColor="#F9F9F9"
         android:textSize="28sp"
         android:fontFamily="@font/montserratextrabold"
         app:layout_constraintEnd_toEndOf="parent"
