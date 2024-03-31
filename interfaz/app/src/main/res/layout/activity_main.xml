@@ -13,14 +13,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="440dp"
-        android:text="Ingrese Su Huella Dactilar"
-        android:textColor="#F9F9F9"
-        android:textSize="28sp"
         android:fontFamily="@font/montserratextrabold"
+        android:text="@string/login_message"
+        android:textColor="#F9F9F9"
+        android:textSize="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
