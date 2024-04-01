@@ -56,17 +56,17 @@ def answer_message(user_message):
     return bot_response
 
 # class Chatbot:
-#     def __init__(self):
-#         pass
+    def __init__(self):
+        pass
     
-# print("Bienvenido a SAC-Fútbol ChatBot, ¿En que puedo ayudarle?")
+print("Bienvenido a SAC-Fútbol ChatBot, ¿En que puedo ayudarle?")
 
-# #Ejecutamos el chat en bucle
-# while True:
-#     message = input("")
+ #Ejecutamos el chat en bucle
+while True:
+     message = input("")
 
-#     ints = predict_class (message)
-#     res = get_response (ints, intents)
-#     print (res)
-#     if 'nos vemos' in res:
-#         break
+     ints = predict_class (message)
+     res = get_response (ints, intents)
+     print (res)
+     if 'nos vemos' in res:
+         break
