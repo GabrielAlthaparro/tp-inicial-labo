@@ -50,23 +50,8 @@ def get_response(intents_list, intents_json):
             break
     return result
 
+# API del chatbot
 def answer_message(user_message):
     ints = predict_class(user_message)
     bot_response = get_response(ints, intents)
     return bot_response
-
-# class Chatbot:
-    def __init__(self):
-        pass
-    
-print("Bienvenido a SAC-Fútbol ChatBot, ¿En que puedo ayudarle?")
-
- #Ejecutamos el chat en bucle
-while True:
-     message = input("")
-
-     ints = predict_class (message)
-     res = get_response (ints, intents)
-     print (res)
-     if 'nos vemos' in res:
-         break
