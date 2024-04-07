@@ -95,13 +95,21 @@ También los sistemas con IA tendrán que presentar transparencia y cumplir con 
 El objetivo del proyecto es desarrollar un ChatBot avanzado para un complejo deportivo especializado en fútbol. Este asistente virtual estará diseñado para gestionar eficientemente las consultas de los usuarios, proporcionando información precisa sobre la ubicación del complejo, sus horarios de apertura y cierre, así como el nombre del mismo. Además, el ChatBot facilitará la verificación de disponibilidad de las canchas en fechas específicas, permitiendo a los usuarios realizar reservas, especificando la fecha, hora específica, cancha seleccionada y la duración del alquiler deseado, y se le retornará al usuario un número de reserva. Asimismo, el usuario podrá cancelarlas con el número de reserva.
 
 === Herramientas
-A partir de diversas investigaciones pudimos observar que había diferentes opciones a tratar para generar una aplicación móvil con Python, en donde las 3 opciones que encontramos fueron:
+Tras una exhaustiva investigación, exploramos diversas opciones para desarrollar una aplicación móvil utilizando Python. Entre las tres principales alternativas identificadas se encontraban:
 
-* Usar la librería Kivy que utiliza Python.
-* Usar Python y Flutter para poder moldear la aplicación de escritorio a móvil.
-* Usar Kotlin junto con la librería PyTorch. 
+* Utilizar la biblioteca Kivy.
+* Flutter: para adaptar la aplicación de escritorio a móvil.
+* Emplear Kotlin.
 
-Antes estas tres opciones, decidimos poder utilizar Kivy para poder realizar la aplicación móvil y solo utilizar un lenguaje de programación. Además, para probar dicha aplicación optamos por utilizar un celular con sistema Android para correr la APK en el dispositivo.
+Inicialmente, nos inclinamos por Kivy, con el objetivo de crear la aplicación móvil utilizando un único lenguaje de programación. Sin embargo, conforme avanzaba el desarrollo, nos dimos cuenta de que Kivy no era la opción más adecuada para implementar el login con huella dactilar. Por ende, optamos por desarrollar la aplicación utilizando Kotlin.
+
+En cuanto al desarrollo del ChatBot, decidimos utilizar Python junto con la biblioteca NLTK para tokenización y lematización. Para construir nuestro modelo neuronal, evaluamos tres opciones principales:
+
+* Keras
+* Scikit-learn
+* PyTorch
+
+Después de un análisis detallado, elegimos Keras debido a la abundancia de información disponible en internet y los pasos que propuso, los cuales consideramos razonables y comprensibles para nuestro equipo.
 
 == Documentación Técnica y Funcional del Chatbot
 
@@ -149,6 +157,94 @@ El ChatBot se implementa como una aplicación de consola en Python. La implement
 * train_chatbot.py: Script utilizado para entrenar el modelo de red neuronal utilizando los datos de entrenamiento. En donde las primeras líneas de código se utiliza la librería NLTK para poder procesar los datos y así poder generar un modelo de IA que esté bien entrenada.
 * chatbot.py: Script principal que contiene la lógica del ChatBot, incluyendo la clasificación de mensajes de usuarios y la generación de respuestas.
 * intents.json: Archivo JSON que contiene los patrones de mensajes y respuestas asociadas utilizadas para entrenar el modelo.
+
+== Documentación del Login
+
+=== Arrepentimiento de la librería de Kivy y nuevas soluciones
+
+Durante el desarrollo de este proyecto, nuestra principal consideración fue la selección de una biblioteca para el frontend. Optamos por Kivy debido a su capacidad para desarrollar aplicaciones móviles directamente desde Python. Esta elección nos pareció especialmente útil, ya que nos permitía integrar nuestro modelo de ChatBot sin necesidad de recurrir a otros lenguajes de programación.
+
+Inicialmente, contemplamos la posibilidad de implementar la autenticación mediante huella dactilar utilizando la librería "pyjnius", la cual permite a Python interactuar con clases nativas de Java o Android. Sin embargo, aunque esta opción era técnicamente factible, no resultaba práctica dadas las exigentes investigaciones que debíamos llevar a cabo como equipo para su implementación. Dado el tiempo limitado y la fecha de entrega prevista para el 1 de abril, decidimos explorar otras alternativas más viables.
+
+Por consiguiente, optamos por desarrollar la aplicación utilizando Kotlin y aprovechar su integración con el ChatBot. Esta decisión nos permitió avanzar de manera más eficiente hacia nuestros objetivos, garantizando una entrega oportuna y satisfactoria.
+
+=== Desarrollo de la GUI para el login
+
+Una vez tomamos la decisión de desarrollar la aplicación en Kotlin, comenzamos a codificar la interfaz de usuario (GUI). Este proceso incluyó la creación del inicio de sesión, el cual se encuentra representado en el archivo "activity_main.xml" ubicado en la carpeta "res/layout". En este archivo, diseñamos un estilo personalizado para la pantalla inicial, donde el usuario se encuentra con una representación visual de una huella dactilar. Esta imagen funciona como un botón que permite al usuario acceder al ChatBot utilizando la huella dactilar registrada en su dispositivo.
+
+=== Lógica del Login
+
+Ya desarrollado la GUI para el acceso a la aplicación, vamos a explicar el funcionamiento del código para el inicio de sesión con la huella dactilar utilizada en el dispositivo móvil.
+[source, Kotlin]
+----
+lateinit var binding: ActivityMainBinding
+    lateinit var info: String
+
+    private lateinit var executor: Executor
+    private lateinit var biometricPrompt: BiometricPrompt
+    private lateinit var promptInfo: BiometricPrompt.PromptInfo
+----
+El código comienza con la declaración de la variable "binding", que utiliza la clase "ActivityMainBinding" para facilitar la manipulación de las vistas definidas en "activity_main.xml". Posteriormente, se inicializa la variable "executor", empleando la clase "Executor", lo que permite la ejecución de actividades de manera asíncrona. Finalmente, se hace uso de la clase "BiometricPrompt" para implementar la validación biométrica y permitir el acceso a la aplicación.
+[source, Kotlin]
+----
+override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+
+        // Verificar si el dispositivo admite la autenticación biométrica
+        executor = ContextCompat.getMainExecutor(this)
+        biometricPrompt = BiometricPrompt(this, executor,
+            object : BiometricPrompt.AuthenticationCallback() {
+                override fun onAuthenticationError(
+                    errorCode: Int,
+                    errString: CharSequence,
+                ) {
+                    super.onAuthenticationError(errorCode, errString)
+                    Toast.makeText(applicationContext,
+                        "Authentication error: $errString", Toast.LENGTH_SHORT)
+                        .show()
+                }
+
+                override fun onAuthenticationSucceeded(
+                    result: BiometricPrompt.AuthenticationResult,
+                ) {
+                    super.onAuthenticationSucceeded(result)
+                    Toast.makeText(applicationContext,
+                        "Authentication succeeded!", Toast.LENGTH_SHORT)
+                        .show()
+                    setContentView(R.layout.chat)
+
+                }
+
+                override fun onAuthenticationFailed() {
+                    super.onAuthenticationFailed()
+                    Toast.makeText(applicationContext, "Authentication failed",
+                        Toast.LENGTH_SHORT)
+                        .show()
+
+                }
+            })
+----
+
+La inicialización de la variable "biometricPrompt" ocurre una vez que todas las variables están inicializadas. Esta variable contiene la lógica para verificar la precisión de los datos biométricos y manejar los casos de autenticación correcta, incorrecta o errores imposibles de verificar. Esta funcionalidad se refleja en los métodos de anulación "onAuthenticationError", "onAuthenticationSucceeded" y "onAuthenticationFailed". En caso de una autenticación exitosa, se permite el acceso al ChatBot.
+
+Posteriormente, se configura la variable "promptInfo" para definir la información que se mostrará en la pantalla de ingreso de la huella dactilar del usuario. Luego, a través de la acción "binding.imageView2.setOnClickListener()", se establece que, al hacer clic en la imagen de la huella dactilar, se abrirá la pantalla para la lectura de la huella dactilar.
+
+=== Entrega y Herramientas
+
+En este próximo incremento, estamos introduciendo una funcionalidad clave: la capacidad de acceder a nuestra aplicación móvil utilizando la autenticación de huella dactilar, junto con su interfaz gráfica correspondiente. Además, estamos implementando una interfaz gráfica de chat, aunque inicialmente su funcionalidad será limitada a respuestas predefinidas. Sin embargo, en el próximo lanzamiento, planeamos integrar un ChatBot desarrollado en Python, disponible en la carpeta 'proyecto' de nuestro repositorio.
+
+Dado que gran parte del código se centra en la creación de interfaces gráficas y está desarrollado en Kotlin utilizando Android Studio, hemos optado por presentar un video de demostración sin audio. Esta elección nos permite mostrar de manera efectiva el comportamiento y las diferentes pantallas del sistema. 
+
+
+=== Conclusión
+
+En resumen, el desarrollo del login con Kotlin nos proporcionó no solo un ahorro de tiempo en la implementación del proyecto, sino también la oportunidad de ofrecer al usuario una experiencia de inicio de sesión con huella dactilar de manera más sencilla y directa en su propio dispositivo. Esta elección de enfoque ha transformado nuestras decisiones y estamos convencidos de que fue la opción más acertada para nuestro proyecto.
+
+== Bibliografía
+
 
 == Bibliografía
 

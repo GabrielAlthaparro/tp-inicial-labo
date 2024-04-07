@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b20cba50-f377-469f-981a-f9f567b762fb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tp-inicial-labo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tp-inicial-labo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proyecto/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proyecto/.idea/proyecto.iml" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/.idea/proyecto.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/proyecto/KivyMD" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/KivyMD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/proyecto/KivyMD/kivymd/_version.py" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/KivyMD/kivymd/_version.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proyecto/chatbot.py" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/chatbot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proyecto/chatbot_model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/chatbot_model.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proyecto/classes.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/classes.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proyecto/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/proyecto/words.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/words.pkl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,19 +14,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2dxkPXGOgyvUGa94diElaoR6CUL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Facultad/AAAAAAFacultad/UNGS/Ano 2024/Cuatrimestre 1/Proyecto Profesional I/tp-inicial-labo"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Facultad/AAAAAAFacultad/UNGS/Ano 2024/Cuatrimestre 1/Proyecto Profesional I/tp-inicial-labo&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="chatbot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tp-inicial-labo" />
