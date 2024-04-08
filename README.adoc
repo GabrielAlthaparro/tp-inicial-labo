@@ -424,8 +424,11 @@ En esta sección, procederemos a detallar el proceso mediante el cual se permite
 ----
 Take our ngrok in production survey! https://forms.gle/aXiBFWzEA36DudFn6                                                                                                                                                                        Session Status                online                                                                                    Account                       este2212 (Plan: Free)                                                                     Version                       3.8.0                                                                                     Region                        South America (sa)                                                                        Latency                       36ms                                                                                      Web Interface                 http://127.0.0.1:4040                                                                     Forwarding                    https://b2a8-190-174-239-16.ngrok-free.app -> http://192.168.1.33:5000                                                                                                                                            Connections                   ttl     opn     rt1     rt5     p50     p90                                                                             0       0       0.00    0.00    0.00    0.00 
 ----
-4-Luego ejecutar paso 9 de la anterior sección y en vez de poner la iP ubicamos el link que nos proporciona Ngrok 
-
+4-Luego en la línea 56 de Chatbot.kt dentro de baseurl(“Ingresar la url”) ingresar la url que nombramos anteriormente 
+[source, Kotlin]
+----
+baseUrl("https://470a-190-174-239-16.ngrok-free.app}")                                                                           
+----
 5-Fin
 
 

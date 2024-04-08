@@ -32,7 +32,7 @@ interface ChatbotService {
 class RemoteResult(val apiCallsCount:Int, val answer:String)
 
 object ChatbotServerConfig {
-  const val IP_ADDRESS = "192.168.1.15"
+  const val IP_ADDRESS = "192.168.1.33"
   const val PORT = 5000
 }
 
@@ -53,7 +53,7 @@ class Chatbot : AppCompatActivity() {
     runBlocking{
       try {
         retrofit = Retrofit.Builder()
-          .baseUrl("http://${ChatbotServerConfig.IP_ADDRESS}:${ChatbotServerConfig.PORT}")
+          .baseUrl("https://470a-190-174-239-16.ngrok-free.app}")
           .addConverterFactory(GsonConverterFactory.create()) // Add your converter
           .build()
         botService = retrofit.create(ChatbotService::class.java)
