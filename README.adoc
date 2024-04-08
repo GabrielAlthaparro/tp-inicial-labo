@@ -337,7 +337,7 @@ Como respuesta a este problema, se ha identificado una solución mediante la imp
 La implementación del servicio de Chatbot se benefició significativamente con la integración de la librería Ngrok. Esta herramienta demostró ser una solución altamente eficaz para facilitar el despliegue de nuestro sistema. A través del programa Ngrok.exe, se crea un proceso local que se vincula con el servidor de Ngrok, permitiendo el acceso desde cualquier dispositivo conectado a internet. Una vez establecida la conexión entre nuestro servidor local y los servidores de Ngrok, gracias a la aplicación actuando como intermediario en nuestra computadora, nuestro servicio es capaz de responder a las solicitudes de los usuarios de manera efectiva.
 
 .Funcionamiento Ngrok
-image::entrega4/63eebf554563f71204a1fa66_architecture.png[]
+image::ImagenDocumentos/63eebf554563f71204a1fa66_architecture.png[]
 
 Lo que resulta especialmente gratificante de esta herramienta es su gratuidad y la facilidad con la que se puede realizar un despliegue de muestra para la aplicación. Sin embargo, es importante tener en cuenta que esta constituye solamente una solución provisional para poner en funcionamiento el Chatbot. En perspectiva, es altamente recomendable migrar el servicio a un servidor externo que opere de manera continua. Este enfoque preventivo se justifica por posibles contratiempos como cortes de energía, interrupciones en la conectividad a internet y la necesidad de gestionar eficientemente los recursos del sistema.
 
