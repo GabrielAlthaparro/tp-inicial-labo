@@ -50,20 +50,7 @@ class Chatbot : AppCompatActivity() {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.chat)
 
-    runBlocking{
-      try {
-        retrofit = Retrofit.Builder()
-          .baseUrl("https://470a-190-174-239-16.ngrok-free.app}")
-          .addConverterFactory(GsonConverterFactory.create()) // Add your converter
-          .build()
-        botService = retrofit.create(ChatbotService::class.java)
-        val response = botService.test()
-        Log.i(TAG, "Server funcionando correctamente")
-      }catch (e:Exception){
-        Log.e(TAG,"server error: " + e.message, e)
-        Toast.makeText(applicationContext,"Error de conexión. Por favor, cierre la aplicación",Toast.LENGTH_LONG).show()
-      }
-    }
+
 
     btnSend = findViewById(R.id.btn_send)
     rvMessages = findViewById(R.id.rv_messages)
@@ -88,6 +75,22 @@ class Chatbot : AppCompatActivity() {
 
     adapter.insertMessage(Message("Bienvenido a SAC-Fútbol Chatbot! ¿En qué lo puedo ayudar?", Sender.BOT))
     rvMessages.scrollToPosition(adapter.itemCount - 1)
+
+    runBlocking{
+      try {
+        retrofit = Retrofit.Builder()
+          .baseUrl("http://192.168.1.42:5000")
+          .addConverterFactory(GsonConverterFactory.create()) // Add your converter
+          .build()
+        botService = retrofit.create(ChatbotService::class.java)
+        val response = botService.test()
+        Log.i(TAG, "Server funcionando correctamente")
+      }catch (e:Exception){
+        Log.e(TAG,"server error: " + e.message, e)
+        Toast.makeText(applicationContext,"Error de conexión. Por favor, cierre la aplicación",Toast.LENGTH_LONG).show()
+      }
+    }
+
   }
 
   override fun onStart() {

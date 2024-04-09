@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request
 
 from chatbot import answer_message
-from get_ip import get_local_ip
+#from get_ip import get_local_ip
 
 app = Flask(__name__)
 count = 0
@@ -30,8 +30,8 @@ def message():
   return jsonify(data)
 
 if __name__ == '__main__':
-    host = get_local_ip()
-    user_input = input("Ingrese ip (enter for default " + host + "): ")
+    host ="0.0.0.0"
+    user_input = input("Ingrese IP : ")
     if (user_input != ""):
       host = user_input
 
